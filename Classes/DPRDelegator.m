@@ -26,7 +26,7 @@
                 }
                 [invocation invoke];
             } else {
-                [NSException raise:@"Wrong number of arguments" format:@"%@ received %ld instead of %ld", NSStringFromSelector(selector), arguments.count, expectedArgCount];
+                [NSException raise:@"Wrong number of arguments" format:@"%@ received %ld instead of %ld", NSStringFromSelector(selector), (unsigned long) arguments.count, expectedArgCount];
             }
         }
     }
