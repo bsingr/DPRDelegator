@@ -32,7 +32,8 @@ Pod::Spec.new do |s|
 
   # Specify the location from where the source should be retrieved.
   #
-  s.source       = { :git => "https://github.com/dpree/DPRDelegator.git" }
+  s.source       = { :git => "https://github.com/dpree/DPRDelegator.git",
+                     :tag => '0.0.1' }
 
 
   # If this Pod runs only on iOS or OS X, then specify the platform and
