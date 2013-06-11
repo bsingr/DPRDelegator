@@ -9,6 +9,6 @@
 
 @interface DPRDelegator : NSObject
 
-+(void)tryInvoke:(id)delegate withSelector:(SEL)selector arguments:(NSArray *)arguments;
++(void)delegate:(id)delegate try:(SEL)selector with:(NSArray *)arguments;
 
 @end
