@@ -10,6 +10,7 @@
 @implementation DPRDelegator
 
 // TODO: maybe use variable argument list instead of NSArray
+// and handle non-object args
 +(void)delegate:(id)delegate try:(SEL)selector with:(NSArray *)arguments
 {
     if (delegate) {
